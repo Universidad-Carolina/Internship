@@ -1,5 +1,5 @@
-document.getElementById('searchBtn').addEventListener('click', function () {
-  const searchInput = document.getElementById('searchInput').value;
+document.getElementsByClassName('searchBtn')[0].addEventListener('click', function () {
+  const searchInput = document.getElementsByClassName('searchInput')[0].value;
 
   if (searchInput.trim() !== '') {
     fetchMovie(searchInput);
@@ -33,10 +33,20 @@ function encodeSpacesAsPlus(title) {
 }
 
 function displayMovieDetails(movie) {
-  const movieDetails = document.getElementById('movieDetails');
-  movieDetails.innerHTML = `
-        <h2>${movie.Title} (${movie.Year})</h2>
-        <img src="${movie.Poster}" alt="Movie Poster">
-        <p>${movie.Plot}</p>
-    `;
+  const moviePoster = document.getElementsByClassName('moviePoster')[0];
+
+  if (movie.Poster !== 'N/A') {
+    moviePoster.innerHTML = `<img src="${movie.Poster}" alt="Movie Poster">`;
+  } else {
+    moviePoster.innerHTML = 'No poster available';
+  }
+
+  document.getElementsByClassName('movieTitle')[0].innerText = movie.Title;
+  document.getElementsByClassName('moviePlot')[0].innerText = movie.Plot;
+  document.getElementsByClassName('movieActors')[0].innerText = 'Actors: ' + movie.Actors;
+  document.getElementsByClassName('movieDirector')[0].innerText = 'Director: ' + movie.Director;
+  document.getElementsByClassName('movieGenre')[0].innerText = 'Genre: ' + movie.Genre;
+  document.getElementsByClassName('movieReleased')[0].innerText = 'Released: ' + movie.Released;
+  document.getElementsByClassName('movieRuntime')[0].innerText = 'Runtime: ' + movie.Runtime;
+  document.getElementsByClassName('movieRating')[0].innerText = 'Rating: ' + movie.imdbRating;
 }
