@@ -3,15 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movie Search</title>
+    <title>Movie Search App</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Movie Search</h1>
-      <input type="text" id="searchInput" placeholder="Enter movie title" />
-      <button id="searchBtn">Search</button>
-      <div id="movieDetails"></div>
+    <div class="background">
+      <div class="glassContainer">
+        <h1 class="title">MovieSearch</h1>
+        <div class="searchContainer">
+          <input type="text" class="searchInput" placeholder="Search for a movie..." />
+          <button class="searchBtn">search</button>
+        </div>
+        <div class="movieDetails">
+          <div class="moviePoster"></div>
+          <div class="movieInfo">
+            <h2 class="movieTitle">Movie Title</h2>
+            <p class="moviePlot">Movie Plot</p>
+            <p class="movieActors">Actors</p>
+            <p class="movieDirector">Director</p>
+            <p class="movieGenre">Genre</p>
+            <p class="movieReleased">Released</p>
+            <p class="movieRuntime">Runtime</p>
+            <p class="movieRating">Rating</p>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
