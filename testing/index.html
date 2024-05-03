@@ -3,13 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movie Search App</title>
+    <title>Movie Search</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
   </head>
   <body>
     <div class="background">
       <div class="glassContainer">
-        <h1 class="title">MovieSearch</h1>
+        <p class="title"><span class="movieTextTitle">movie</span><span class="searchTextTitle">search</span></p>
         <div class="searchContainer">
           <input type="text" class="searchInput" placeholder="Search for a movie..." />
           <button class="searchBtn">search</button>
@@ -17,14 +20,39 @@
         <div class="movieDetails">
           <div class="moviePoster"></div>
           <div class="movieInfo">
-            <h2 class="movieTitle">Movie Title</h2>
-            <p class="moviePlot">Movie Plot</p>
-            <p class="movieActors">Actors</p>
-            <p class="movieDirector">Director</p>
-            <p class="movieGenre">Genre</p>
-            <p class="movieReleased">Released</p>
-            <p class="movieRuntime">Runtime</p>
-            <p class="movieRating">Rating</p>
+            <div class="detailsOne">
+              <h2 class="movieTitle"></h2>
+              <div class="movieBaseInfo">
+                <p class="movieReleased"></p>
+                <p class="movieRated"></p>
+                <p class="movieRuntime"></p>
+              </div>
+            </div>
+            <div class="detailsTwo">
+              <p class="moviePlot"></p>
+            </div>
+            <div class="detailsThree">
+              <p><span class="directorText titleText"></span> <span class="movieDirector"></span></p>
+              <p><span class="writersText titleText"></span> <span class="movieWriters"></span></p>
+              <p><span class="actorsText titleText"></span><span class="movieActors"></span></p>
+            </div>
+            <div class="detailsFour">
+              <p class="movieRatings"></p>
+              <div class="ratingsGrid">
+                <div class="imdb">
+                  <p class="imbdRating ratingText"></p>
+                  <p class="imbdSource"></p>
+                </div>
+                <div class="rotten">
+                  <p class="rottenRating ratingText"></p>
+                  <p class="rottenSource"></p>
+                </div>
+                <div class="metaCritic">
+                  <p class="metacriticRating ratingText"></p>
+                  <p class="metacriticSource"></p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
