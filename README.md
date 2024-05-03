@@ -31,7 +31,7 @@ Sientete libre de usar cualquier libreria externa que te pueda ayudar.
 1. Crea un nuevo repositorio en tu cuenta de GitHub.
 2. Clona el repositorio recién creado en tu máquina local.
 3. Implementa tus cambios y asegúrate de que todo funcione como se espera.
-4. Cuando estés listo para compartir tu trabajo, envía el enlace del repositorio a [tu@email.com](mailto:karina.davila@ucarolina.edu.mx).
+4. Cuando estés listo para compartir tu trabajo, envía el enlace del repositorio a [karina.davila@ucarolina.edu.mx](mailto:karina.davila@ucarolina.edu.mx).
 5. ¡Listo! Espera comentarios o sugerencias para mejorar tu contribución.
 
 ¡Esperamos ver tu trabajo pronto!
