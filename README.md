@@ -11,9 +11,11 @@ El producto final deberá asemejarse lo más posible a la imagen de referencia. 
 ## Requisitos del Proyecto
 
 - Crear una interfaz de usuario para buscar películas.
-- Mostrar detalles de las películas como título, año, trama y póster.
+- Mostrar detalles de las películas como título, año, trama y póster (Incluyendo todo lo que se ve en la imagen de referencia).
 - Utilizar la API de OMDB para obtener la información de las películas.
-- El proyecto final se deberá entregar mediante un fork o creando un repositorio de GitHub.
+- Debe ser posible buscar peliculas por nombre y año o solo por nombre.
+- En caso de no encontrar una película deberá emerger un prompt que muestre el error.
+- El proyecto final se deberá entregar creando un repositorio de GitHub.
 
 ## Recursos Útiles
 
