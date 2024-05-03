@@ -52,9 +52,8 @@ function encodeSpacesAsPlus(title) {
 function displayMovieDetails(movie) {
   const moviePoster = document.getElementsByClassName('moviePoster')[0];
 
-  console.log(movie.Ratings[0]);
   if (movie.Poster !== 'N/A') {
-    moviePoster.innerHTML = `<img src="${movie.Poster}" alt="Movie Poster">`;
+    moviePoster.style.backgroundImage = `url(${movie.Poster})`;
   } else {
     moviePoster.innerHTML = 'No poster available';
   }

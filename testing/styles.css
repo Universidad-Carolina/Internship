@@ -60,7 +60,7 @@ html {
 
 .searchInput {
   width: 90%;
-  padding: 2vh; /* Responsive padding */
+  padding: 2vh;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 5px;
   background-color: rgba(56, 56, 56, 0.233);
@@ -82,8 +82,8 @@ html {
 .movieDetails {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 10px;
-  padding: 10px; /* Responsive padding */
-  height: 95%; /* Adjust to desired percentage */
+  padding: 10px;
+  height: 95%;
   background-color: rgba(56, 56, 56, 0.233);
   color: white;
   display: grid;
@@ -101,7 +101,6 @@ html {
 }
 
 .movieInfo {
-  /* padding-left: 2vw; */
   display: grid;
   height: 100%;
   display: grid;
@@ -170,4 +169,11 @@ p {
 
 .metaCritic {
   text-align: right;
+}
+
+.moviePoster {
+  background-size: cover;
+  background-position: center;
+  width: 90%;
+  height: 95%;
 }
